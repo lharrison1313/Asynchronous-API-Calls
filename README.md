@@ -5,6 +5,7 @@
 2) run `npm run start`
 
 **Dependencies**
+- Node v20.8.1
 - [express.js](https://expressjs.com/)
 - [axios](https://axios-http.com/)
 
