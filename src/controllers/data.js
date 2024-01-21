@@ -35,9 +35,11 @@ export async function processData(req,res){
         .forEach((r)=>{ 
             //map type to pokemon
             r.value.data.types.forEach((type)=>{
+                //if exists push pokemon
                 if(pokeTypeMap[type.type.name]){
                     pokeTypeMap[type.type.name].push(r.value.data.name)
                 }
+                //else create new type key
                 else{
                     pokeTypeMap[type.type.name] = [r.value.data.name]
                 }
